@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
-import { NavigateButton, WeeklyItemCard } from "../../components";
+import {
+  HeadComponent,
+  NavigateButton,
+  WeeklyItemCard,
+} from "../../components";
 
 const Homepage = () => {
   const itemsWeekly = [
@@ -184,6 +188,7 @@ const Homepage = () => {
 
   return (
     <div className="">
+      <HeadComponent title={"Home page"} />
       {/* Hero start */}
       <section className=" items-center lg:flex md:px-8">
         <div className="space-y-4 flex-1 sm:text-center lg:text-left mb-0">
