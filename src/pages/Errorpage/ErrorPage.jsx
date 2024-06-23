@@ -1,4 +1,4 @@
-const ErrorPage = () => {
+const Errorpage = () => {
   const navigations = [
     {
       icon: (
@@ -118,4 +118,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default Errorpage;
