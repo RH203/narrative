@@ -32,8 +32,8 @@ const Footer = () => {
       <footer className="footer px-10 py-4 border-t text-base-content border-base-300">
         <aside className="items-center grid-flow-col">
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by
-            {narrative}
+            {`Copyright © ${new Date().getFullYear()} - All right reserved by 
+            ${narrative}`}
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
