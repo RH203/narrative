@@ -39,7 +39,7 @@ Fork method:
 - PostCSS
 - TailwindCSS
 
-**Server:** [Django (Repo)](https://github.com/mond124/NarrativeNet)
+**Server:** Django [(Repository)](https://github.com/mond124/NarrativeNet)
 
 
 ## Contributing
@@ -53,5 +53,5 @@ Please adhere to this project's `code of conduct`.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at (Discussions)[https://github.com/RH203/narrative/discussions]
+If you have any feedback, please reach out to us at [Discussions](https://github.com/RH203/narrative/discussions)
 
