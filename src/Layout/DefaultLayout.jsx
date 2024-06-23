@@ -5,7 +5,7 @@ const DefaultLayout = () => {
   return (
     <div>
       <Navbar />
-      <main className="w-10/12 mx-auto my-10">
+      <main className="w-10/12 mx-auto my-10 font-poppins">
         <Outlet />
       </main>
       <Footer />
