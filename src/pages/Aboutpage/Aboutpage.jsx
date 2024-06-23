@@ -1,6 +1,11 @@
+import {
+  HeadComponent,
+} from "../../components";
+
 const Aboutpage = () => {
   return (
     <div className="w-10/12 mx-auto">
+      <HeadComponent title={"About page"} />
       {/* Hero page Start */}
       <div>
         <div className="grid grid-cols-2">
