@@ -1,8 +1,42 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Narrative
 
-Currently, two official plugins are available:
+A simple project for practicing React and Redux skills, focused on creating a basic web app for reading and sharing short stories.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+Clone method:
+```bash
+  git clone git@github.com:RH203/narrative.git
+  cd narrative
+  npm i
+```
+
+Fork method:
+```bash
+  fork this repo
+  git clone git@github.com:RH203/narrative.git
+  cd narrative
+  npm i
+```
+## Tech Stack
+
+**Client:** React, Redux, TailwindCSS
+
+**Server:** Django (Repo)[https://github.com/mond124/NarrativeNet]
+
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at (Discussions)[https://github.com/RH203/narrative/discussions]
+
