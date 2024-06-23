@@ -35,7 +35,7 @@ const Navbar = () => {
               <NavigateButton title={"Create"} link={""} style={""} />
             </li>
             <li>
-              <NavigateButton title={"About us"} link={""} style={""} />
+              <NavigateButton title={"About us"} link={"about"} style={""} />
             </li>
             <li>
               <a>Rankings</a>
@@ -69,7 +69,7 @@ const Navbar = () => {
             <NavigateButton title={"Create"} link={""} style={""} />
           </li>
           <li>
-            <NavigateButton title={"About us"} link={""} style={""} />
+            <NavigateButton title={"About us"} link={"about"} style={""} />
           </li>
           <li>
             <details>
