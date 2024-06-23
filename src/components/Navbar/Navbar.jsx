@@ -29,10 +29,10 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <NavigateButton title={"Browse"} link={""} style={""} />
+              <NavigateButton title={"Home"} link={""} style={""} />
             </li>
             <li>
-              <NavigateButton title={"Create"} link={""} style={""} />
+              <NavigateButton title={"Browse"} link={""} style={""} />
             </li>
             <li>
               <NavigateButton title={"About us"} link={"about"} style={""} />
@@ -63,10 +63,10 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavigateButton title={"Browse"} link={""} style={""} />
+            <NavigateButton title={"Home"} link={""} style={""} />
           </li>
           <li>
-            <NavigateButton title={"Create"} link={""} style={""} />
+            <NavigateButton title={"Browse"} link={""} style={""} />
           </li>
           <li>
             <NavigateButton title={"About us"} link={"about"} style={""} />
