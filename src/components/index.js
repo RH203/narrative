@@ -12,4 +12,15 @@ import HeadComponent from "./HeadComponent/HeadComponent";
 
 import InfoCard from "./InfoCard/InfoCard";
 
-export { Navbar, Footer, NavigateButton, WeeklyItemCard, HeadComponent, InfoCard };
+// animated
+import AnimatedCounter from "./AnimatedCounter/AnimatedCounter";
+
+export {
+  Navbar,
+  Footer,
+  NavigateButton,
+  WeeklyItemCard,
+  HeadComponent,
+  InfoCard,
+  AnimatedCounter,
+};
