@@ -22,9 +22,24 @@ Fork method:
 ```
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
+**Client:**
+- React
+- Redux Toolkit
+- TailwindCSS
+- Framer Motion
+- React Helmet Async
+- React Router DOM
+- React Typed
+- TypeIt React
 
-**Server:** Django (Repo)[https://github.com/mond124/NarrativeNet]
+**Development:**
+- Vite
+- ESLint
+- DaisyUI
+- PostCSS
+- TailwindCSS
+
+**Server:** [Django (Repo)](https://github.com/mond124/NarrativeNet)
 
 
 ## Contributing
