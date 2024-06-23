@@ -1,9 +1,11 @@
 import { MdFavoriteBorder } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
+import { narrative } from "../../constant/constants";
+import NavigateButton from "../NavigateButton/NavigateButton";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 font-poppins">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,53 +29,75 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <NavigateButton title={"Browse"} link={""} style={""} />
             </li>
             <li>
-              <a>Parent</a>
+              <NavigateButton title={"Create"} link={""} style={""} />
+            </li>
+            <li>
+              <NavigateButton title={"About us"} link={""} style={""} />
+            </li>
+            <li>
+              <a>Rankings</a>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <NavigateButton
+                    title={"Novels Rankings"}
+                    link={""}
+                    style={""}
+                  />
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <NavigateButton
+                    title={"Comic Rankings"}
+                    link={""}
+                    style={""}
+                  />
                 </li>
               </ul>
             </li>
-            <li>
-              <a>Item 3</a>
-            </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Narrative</a>
+        <a className="btn btn-ghost text-xl">{narrative}</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <NavigateButton title={"Browse"} link={""} style={""} />
+          </li>
+          <li>
+            <NavigateButton title={"Create"} link={""} style={""} />
+          </li>
+          <li>
+            <NavigateButton title={"About us"} link={""} style={""} />
           </li>
           <li>
             <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
+              <summary>Rankings</summary>
+              <ul className="p-2 ">
                 <li>
-                  <a>Submenu 1</a>
+                  <NavigateButton
+                    title={"Novels Rankings"}
+                    link={""}
+                    style={""}
+                  />
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <NavigateButton
+                    title={"Comic Rankings"}
+                    link={""}
+                    style={""}
+                  />
                 </li>
               </ul>
             </details>
-          </li>
-          <li>
-            <a>Item 3</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
         {/* Search Start */}
         <div className="">
-          <button className="hover:bg-gray-300 p-3 hover:rounded-full transition duration-500 rounded-full">
+          <button className="hover:bg-gray-300 p-3 hover:rounded-full rounded-full transition-transform transform-gpu active:scale-90">
             <IoMdSearch size={25} />
           </button>
         </div>
