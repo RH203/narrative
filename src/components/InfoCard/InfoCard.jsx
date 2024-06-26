@@ -6,10 +6,10 @@ const InfoCard = ({ img, title, desc }) => {
       <div className="group-hover:bg-slate-200 rounded-full px-2 py-3 transition duration-500">
         {img}
       </div>
-      <h6 className="font-bold group-hover:text-white transition duration-500">
+      <h6 className="font-bold group-hover:text-white transition duration-500 sm:text-center xs:text-center sm:p-1 xs:p-1">
         {title}
       </h6>
-      <small className="group-hover:text-white transition duration-500">
+      <small className="group-hover:text-white transition duration-500 sm:text-center xs:text-center sm:p-1 xs:p-1">
         {desc}
       </small>
     </div>
