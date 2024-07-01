@@ -1,4 +1,4 @@
-import { AnimatedCounter, HeadComponent, InfoCard } from "../../components";
+import { AnimatedCounter, HeadComponent, InfoCard, ProfileCard } from "../../components";
 import { BiStoreAlt } from "react-icons/bi";
 import { BsCoin } from "react-icons/bs";
 import { BsHandbag } from "react-icons/bs";
@@ -61,6 +61,27 @@ const Aboutpage = () => {
     },
   ];
 
+  const Profile = [
+    {
+      id: 5,
+      name: "Tom Cruise",
+      img: <CiBag1 size={60} />,
+      role: "Founder & Chairman",
+    },
+    {
+      id: 6,
+      name: "Emma Watson",
+      img: <CiBag1 size={60} />,
+      role: "Managing Director",
+    },
+    {
+      id: 7,
+      name: "Will Smith",
+      img: <CiBag1 size={60} />,
+      role: "Product Designer",
+    },
+  ];
+
   return (
     <div>
       <HeadComponent title={"About page"} />
@@ -116,6 +137,16 @@ const Aboutpage = () => {
             title={item.title}
             img={item.img}
             desc={item.desc}
+          />
+        ))}
+      </div>
+      <div>
+        {Profile.map((Profiles) => (
+          <ProfileCard
+            key={Profiles.id}
+            name={Profiles.name}
+            img={Profiles.img}
+            role={Profiles.role}
           />
         ))}
       </div>
