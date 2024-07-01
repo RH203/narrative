@@ -140,7 +140,7 @@ const Aboutpage = () => {
           />
         ))}
       </div>
-      <div>
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-5 mt-28">
         {Profile.map((Profiles) => (
           <ProfileCard
             key={Profiles.id}
