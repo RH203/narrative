@@ -23,7 +23,6 @@ const AnimatedCounter = ({ from = 0, to, duration = 1, animationOptions }) => {
       duration,
       ease: "easeOut",
       ...animationOptions,
-
       onUpdate(value) {
         element.textContent = `${value.toFixed(0)}K`;
       },
@@ -37,11 +36,11 @@ const AnimatedCounter = ({ from = 0, to, duration = 1, animationOptions }) => {
   return <span ref={ref} className="text-xl" />;
 };
 
+export default AnimatedCounter;
+
 AnimatedCounter.propTypes = {
   from: propTypes.number,
   to: propTypes.number,
   duration: propTypes.number,
   animationOptions: propTypes.any,
 };
-
-export default AnimatedCounter;

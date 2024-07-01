@@ -1,8 +1,9 @@
-import { AnimatedCounter, HeadComponent, InfoCard } from "../../components";
+import { AnimatedCounter, HeadComponent, InfoCard, ProfileCard } from "../../components";
 import { BiStoreAlt } from "react-icons/bi";
 import { BsCoin } from "react-icons/bs";
 import { BsHandbag } from "react-icons/bs";
 import { CiBag1 } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const Aboutpage = () => {
   const items = [
@@ -60,32 +61,71 @@ const Aboutpage = () => {
     },
   ];
 
+  const Profile = [
+    {
+      id: 5,
+      name: "Tom Cruise",
+      img: <CiBag1 size={60} />,
+      role: "Founder & Chairman",
+    },
+    {
+      id: 6,
+      name: "Emma Watson",
+      img: <CiBag1 size={60} />,
+      role: "Managing Director",
+    },
+    {
+      id: 7,
+      name: "Will Smith",
+      img: <CiBag1 size={60} />,
+      role: "Product Designer",
+    },
+  ];
+
   return (
     <div>
       <HeadComponent title={"About page"} />
       {/* Hero page Start */}
       <div className="flex">
         <div className="space-y-8 xs:text-center sm:text-center lg:text-left flex-1">
-          <h1 className="text-black font-bold text-4xl xl:text-5xl">
+          <motion.h1
+            className="text-black font-bold text-4xl xl:text-5xl"
+            initial={{ x: 0, y: -100, opacity: 0 }}
+            animate={{ x: 0, y: 0, opacity: 1 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+          >
             Our Story
-          </h1>
-          <p className="text-gray-500 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
+          </motion.h1>
+          <motion.p
+            className="text-gray-500 max-w-xl leading-relaxed sm:mx-auto lg:ml-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2.5, ease: "easeInOut" }}
+          >
             Launced in 2015, Exclusive is South Asia’s premier online shopping
             makterplace with an active presense in Bangladesh. Supported by wide
             range of tailored marketing, data and service solutions, Exclusive
             has 10,500 sallers and 300 brands and serves 3 millioons customers
             across the region.
-          </p>
-          <p className="text-gray-500 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
+          </motion.p>
+          <motion.p
+            className="text-gray-500 max-w-xl leading-relaxed sm:mx-auto lg:ml-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 3, ease: "easeInOut" }}
+          >
             Exclusive has more than 1 Million products to offer, growing at a
             very fast. Exclusive offers a diverse assotment in categories
             ranging from consumer.
-          </p>
+          </motion.p>
         </div>
         <div className="lg:block md:hidden sm:hidden xs:hidden flex-1">
-          <img
+          <motion.img
             src="https://i.postimg.cc/HxHyt53c/undraw-heatmap-uyye.png"
             className="w-full mx-auto sm:w-10/12 lg:w-full lg:block md:block sm:hidden xs:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2.5, ease: "easeInOut" }}
           />
         </div>
       </div>
@@ -97,6 +137,16 @@ const Aboutpage = () => {
             title={item.title}
             img={item.img}
             desc={item.desc}
+          />
+        ))}
+      </div>
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-5 mt-28">
+        {Profile.map((Profiles) => (
+          <ProfileCard
+            key={Profiles.id}
+            name={Profiles.name}
+            img={Profiles.img}
+            role={Profiles.role}
           />
         ))}
       </div>
